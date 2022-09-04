@@ -1,0 +1,16 @@
+h3{
+    background-color: beige;
+    color: black;
+}
+div{
+    background-color: blanchedalmond;
+    color: black;
+}
+.even{
+    color: black;
+    background-color:blueviolet;
+}
+.odd{
+    background-color:aquamarine;
+    color: black;
+}
