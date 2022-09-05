@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        #box1{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: aquamarine;
+            position: static; /*static is the default. the box is in it's normal state*/
+        }
+        #box2{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            position: relative;  /*we can move the element relative to it's point of origin*/
+            top: 20px;
+            left: 500px;
+        }
+        #box3{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: lightcoral;
+            position: absolute;  /*the element will be taken out of the flow of the document*/
+            /* the element which is absolutely positioned will search for it's parent. if it does not have a parent it will use viewport as it's parent */
+            top: 50px;
+            left: 50px;
+        }
+        #box4{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color:lightcyan;
+            position: fixed;  /*will stay in position of our viewport. even when we scroll it will stay where we set it*/
+            top: 0px;
+            right: 0px;
+
+        }
+        #box5{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color:limegreen;
+            position: sticky;  /*will stick to an edge in the viewport*/
+            top: 0px;  /*it will stay in it's normal porition but when we scroll past it, it will stick to the top and when we scroll up past it, it will snap back to it's place*/
+
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <div id="box1"></div>
+    <div id="box2">
+        <div id="box3"></div>
+    </div>
+    
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, voluptatem praesentium dolorem voluptate delectus soluta quod eligendi ad ratione! Sint qui ullam deleniti ab facere voluptatibus mollitia ducimus tenetur debitis?</p>
+    
+</body>
+</html>
