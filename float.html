@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .box{
+            background-color: antiquewhite;
+            
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            float: left;  /*this will come ot of the normal flow of the document and the elements following it will follow the same pattern*/
+        }
+        p{
+            clear: left;  /*to make the element stop floating*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Float positions the element to the left or right side of the container. popular for wrapping elements around images -->
+    <div class="box">Box1</div>   <!--div is a block element(entire width of viewport is reserved to display this element)-->
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat porro repudiandae cum saepe, debitis alias repellendus maxime quas odio, libero doloremque. Eius, quo exercitationem impedit nobis similique necessitatibus doloremque itaque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus laborum explicabo natus! Dolorem, sequi voluptatem saepe neque, veritatis iusto deleniti ipsum commodi quos voluptate est, error amet harum adipisci voluptatibus.</p>
+</body>
+</html>
