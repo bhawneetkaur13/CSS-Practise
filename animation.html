@@ -15,7 +15,7 @@
             background-color: lightgreen;
             animation: mySlide;    /*specifying name of animation*/
             animation-duration: 5s;
-            animation-iteration-count: 1;  /*can repeat the animation how many times we wamt*/
+            animation-iteration-count: infinite;  /*can repeat the animation how many times we wamt*/
             animation-play-state: running;  /*can play and pause(paused) the animation */
             animation-delay: 0s; /*animation will start after the specified time*/
             animation-timing-function: linear;  /*linear- constant animation*/
@@ -33,6 +33,7 @@
             background-color:lightpink;
             animation: myRotate;
            animation-duration: 5s;
+           animation-iteration-count: infinite;
 
         }
         #box2{
@@ -75,11 +76,14 @@
             font-size: 225px;
             text-align: center;
             background-color:red;
+            /* animation-iteration-count: infinite; */
         }
         #box5:hover{
-            animation: mySlide;
+            animation: mySlide2;
             animation-duration: 5s;
-            animation-iteration-count: infinite;
+            /* animation-iteration-count: infinite; */
+            /* animation-delay: 2s; */
+            
         }
         
         
@@ -88,6 +92,10 @@
             from{margin-left: 100%;}                /*properties we want to apply at start of animation*/
             to{margin-left: 0%;}                  /*properties we want to apply at the end of animation*/
         } 
+        @keyframes mySlide2{
+            from{margin-left: 0%;}
+            to{margin-left: 100%;}
+        }
         @keyframes myRotate{
             100%{transform: rotate(360deg);}
         }  
@@ -111,6 +119,8 @@
     <div id="box2"> Hi</div>
     <div id="box3"> Hi</div>
     <div id="box4"> Hi</div>
-    <div id="box5"> Hi</div>
+    <div id="box5"> 
+        <span>HI</span>
+    </div>
 </body>
 </html>
