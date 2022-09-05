@@ -69,7 +69,7 @@
             animation-duration: 5s;
             animation-iteration-count: infinite;
         }
-        #box5{
+        .box5{
             border: 2px solid black;
             height: 250px;
             width: 250px;
@@ -78,11 +78,11 @@
             background-color:red;
             /* animation-iteration-count: infinite; */
         }
-        #box5:hover{
+        .container:hover .box5{ 
             animation: mySlide2;
             animation-duration: 5s;
-            /* animation-iteration-count: infinite; */
-            /* animation-delay: 2s; */
+            
+             /* animation-delay: 2s; */
             
         }
         
@@ -119,8 +119,9 @@
     <div id="box2"> Hi</div>
     <div id="box3"> Hi</div>
     <div id="box4"> Hi</div>
-    <div id="box5"> 
-        <span>HI</span>
+    <div class="container">
+        <div class="box5">Hi</div>
     </div>
+    
 </body>
 </html>
