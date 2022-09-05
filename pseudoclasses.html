@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        
+        a:visited{         /*will change the color of the link when the site has been visited*/
+            color: gray;
+        }
+        a:link{          /*will change the color of link*/
+            color: blue;
+        }
+        a:hover{           /*will change the color when we hover on the text*/
+            color: red;
+        }
+        a:active{          /*change the color when we hold down the mouse. the site is in active state*/
+            color: yellow;
+        }
+        button:hover{
+            color: lightcoral;
+        }
+        button:active{
+            color: aqua;
+        }
+        li:nth-child(even){        /*child is an element within an element*/
+            background-color: skyblue;
+        }
+        li:nth-child(odd){        /*we can even pass some formula as an argument if need some particular element to be highlighted*/
+            background-color: powderblue;
+        }
+        
+    </style>
+    
+        
+</head>
+<body>
+    <!-- Psuedo class - a keyword added to a selector that specifies a special state of the selected element  -->
+    <a href="https://www.google.com" target="_blank">Google.com</a>
+
+    <br>
+
+    <button>Click Here</button>
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+    </ul>
+</body>
+</html>
