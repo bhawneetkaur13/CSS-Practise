@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        #box{
+            border: 2px solid black;
+            height: 250px;
+            width: 250px;
+            font-size: 225px;
+            text-align: center;
+            background-color: lightgreen;
+            animation: mySlide;    /*specifying name of animation*/
+            animation-duration: 5s;
+            animation-iteration-count: 1;  /*can repeat the animation how many times we wamt*/
+            animation-play-state: running;  /*can play and pause(paused) the animation */
+            animation-delay: 0s; /*animation will start after the specified time*/
+            animation-timing-function: linear;  /*linear- constant animation*/
+                                                /*ease in - accelerates but does not slow down*/
+                                                /*ease-out-begin quickly an slowly deaccelerates*/
+                                                /*ease- accelerates and deaccelerates at the end*/
+            /*shortcut- duration, timing function, delay, iteration count, play state, animation*/
+        }
+        #box1{
+            border: 2px solid black;
+            height: 250px;
+            width: 250px;
+            font-size: 225px;
+            text-align: center;
+            background-color:lightpink;
+            animation: myRotate;
+           animation-duration: 5s;
+
+        }
+        #box2{
+            border: 2px solid black;
+            height: 250px;
+            width: 250px;
+            font-size: 225px;
+            text-align: center;
+            background-color:red;
+            animation: myScale;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #box3{
+            border: 2px solid black;
+            height: 250px;
+            width: 250px;
+            font-size: 225px;
+            text-align: center;
+            background-color:red;
+            animation: myColor;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #box4{
+            border: 2px solid black;
+            height: 250px;
+            width: 250px;
+            font-size: 225px;
+            text-align: center;
+            background-color:red;
+            animation: myOpacity;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #box5{
+            border: 2px solid black;
+            height: 250px;
+            width: 250px;
+            font-size: 225px;
+            text-align: center;
+            background-color:red;
+        }
+        #box5:hover{
+            animation: mySlide;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+        
+        /* Creating an animation */
+        @keyframes mySlide{        /*mySlide is the unique name for animation*/
+            from{margin-left: 100%;}                /*properties we want to apply at start of animation*/
+            to{margin-left: 0%;}                  /*properties we want to apply at the end of animation*/
+        } 
+        @keyframes myRotate{
+            100%{transform: rotate(360deg);}
+        }  
+        @keyframes myOpacity{
+            50%{opacity: 0;}
+        }
+        @keyframes myScale{
+            100%{transform: scale(0.5,0.5) ;}
+        }
+        @keyframes myColor{
+            20%{background-color: yellow;}
+            50%{background-color: green;}
+            70%{background-color: blue;}
+            100%{background-color: purple;}
+        }
+    </style>
+</head>
+<body>
+    <div id="box"> Hi</div>
+    <div id="box1"> Hi</div>
+    <div id="box2"> Hi</div>
+    <div id="box3"> Hi</div>
+    <div id="box4"> Hi</div>
+    <div id="box5"> Hi</div>
+</body>
+</html>
