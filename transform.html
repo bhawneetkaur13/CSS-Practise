@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        #box{
+            border: 2px solid black;
+            background-color: lightblue;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            font-size: 100px;
+            transform: translate(50px);  /*traslates the element to x-axis, y-axis*/
+        }
+        #box1{
+            border: 2px solid black;
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 100px;
+            transform: rotateX(180deg) ;
+        }
+        #box2{
+            border: 2px solid black;
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 100px;
+            transform: rotateY(180deg); /*can rotate even on z-axis*/
+        }
+        #box3{
+            border: 2px solid black;
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 100px;
+            transform: scaleX(2) /*default value is 1. 2 means scale to 200%*/
+        }
+        #box4{
+            border: 2px solid black;
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 100px;
+            transform: skewX(20deg);  /*can skew on both x and y axis*/
+        }
+        #box5{
+            border: 2px solid black;
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 100px;
+            transform: matrix(2, 0, 0, 2, 150, 45);
+              /*scale x, skew y, skew x, scale y, translate x, translate y*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Hi</div>
+    <div id="box1">Hi</div>
+    <div id="box2">Hi</div>
+    <div id="box3">Hi</div>
+    <div id="box4">Hi</div>
+   <div id="box5">Hi</div>
+</body>
+</html>
