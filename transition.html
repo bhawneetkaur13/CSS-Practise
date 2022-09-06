@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        
+        #box1{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: background-color;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out; */
+
+            /* transition short hand- property duration timimgfunction delay */
+            transition: all 2s ease-in-out 0s;
+
+        }
+        #box1:hover{
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+            font-size: 35px;
+            border-radius: 15px;
+        }
+        #box2{
+            background-color: lightsalmon;
+            margin: 5px;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            transition: all 2s ease-in 0s;
+        }
+        #box2:hover{
+            background-color: darkmagenta;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">This is box 1</div>
+    <div id="box2">This is box 2</div>
+</body>
+</html>
